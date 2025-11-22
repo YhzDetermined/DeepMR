@@ -74,7 +74,7 @@ class MutantPrior:
             layer_str=str(row['layer_id'])
             neuron_str=str(row['neuron_idx'])
             mutant_oper_str=row['mutant_oper']
-            mutant_name_str='L'+layer_str+'N'+neuron_str+'-'+mutant_oper_str+'model.h5'
+            mutant_name_str='L'+layer_str+'-N'+neuron_str+'-'+mutant_oper_str+'model.h5'
             self.selected_mutant_name.add(mutant_name_str)
 
     def getMutantSet(self):
