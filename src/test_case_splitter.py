@@ -18,7 +18,7 @@ class TestCaseSplitter:
         self.__failing_test_expected = []
         # self.loss_func = self.__model.loss.__name__
         if isinstance(self.__model.loss, keras.losses.Loss):
-            self.loss_func = type(self.__model.loss).__name__  
+            self.loss_func = type(self.__model.loss).__name__
         elif callable(self.__model.loss):
             self.loss_func = self.__model.loss.__class__.__name__
         else:
